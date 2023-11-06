@@ -1,0 +1,24 @@
+{
+  "name": "brewlabs-assignment",
+  "version": "1.0.0",
+  "description": "BrewLabs Assignment (Nov 6th 2023)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nalin-Gupta/brewlabs-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nalin-Gupta/brewlabs-assignment/issues"
+  },
+  "homepage": "https://github.com/Nalin-Gupta/brewlabs-assignment#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.2.0"
+  }
+}

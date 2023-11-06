@@ -24,10 +24,10 @@ let db;
 async function initialize() {
     try{
         connection = await client.connect();
-        db = connection.db("bookShelf");
+        db = connection.db(config.get("databaseSettings.database"));
         console.log("Connected To Mongo");
     }catch(error){
-      console.error("Something Went Wrong"  + JSON.stringify(error))
+      return error;
     }
 }
 

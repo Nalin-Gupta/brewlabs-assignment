@@ -1,6 +1,7 @@
 {
     "PORT" : 9000,
     "databaseSettings" : {
-        "mongo_db_connection":"mongodb+srv://nalingupta:6oS6ndHve19v2lCN@bookshelf.rzs9j3u.mongodb.net/?retryWrites=true&w=majority"
+        "mongo_db_connection":"mongodb+srv://nalingupta:6oS6ndHve19v2lCN@bookshelf.rzs9j3u.mongodb.net/?retryWrites=true&w=majority",
+        "database" : "bookShelf"
     }
 }

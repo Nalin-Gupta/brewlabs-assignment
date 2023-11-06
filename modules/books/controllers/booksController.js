@@ -56,7 +56,7 @@ async function updateBooks (req , res) {
             $set : req.body
         };
 
-        let book = mongo.getById(booksConstants.COLLECTIONS.BOOKS_COLLECTION ,id);
+        let book = await mongo.getById(booksConstants.COLLECTIONS.BOOKS_COLLECTION ,id);
 
         if(_.isEmpty(book)){
             return res.status(400).send({
@@ -81,7 +81,7 @@ async function updateBooks (req , res) {
 async function deleteBooks (req , res) {
     try{
         let id = req.params.id;
-        let book = mongo.getById(booksConstants.COLLECTIONS.BOOKS_COLLECTION ,id);
+        let book = await mongo.getById(booksConstants.COLLECTIONS.BOOKS_COLLECTION ,id);
 
         if(_.isEmpty(book)){
             return res.status(400).send({

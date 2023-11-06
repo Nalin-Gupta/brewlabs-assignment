@@ -9,6 +9,7 @@ A Nodejs Application using MongoDB that exposes RESTful API for managing books
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Features](#features)
 - [Deployment Details](#deployment)
 - [API Endpoints](#api-endpoints)
 
@@ -36,6 +37,14 @@ npm install
 ```
 - Add your mongoDB connection string in config/development.json
 
+## Features
+
+- CRUD Operations: View / Add / Update / Delete operations for managing books.
+- MongoDB Integration
+- RESTful Interface: Accessible POST/GET/PATCH/DELETE API endpoints.
+- Payload Validation and Error Handling using JOI
+
+
 ## Usage
 ```bash
 npm run dev
@@ -44,7 +53,7 @@ npm run dev
 ## Deploymnet Details
 
 Current Example API Base URl : http://54.226.89.144:9000/
-Deployment Details :
+
 
 - Launched An Ec2 Instance from AWS Console
 - Created a Security Group for the instance to allow traffic from ALL IPs to port 9000 of the server 

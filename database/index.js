@@ -1,6 +1,3 @@
-
-
-const dbProperties                  = require('./dbProperties');
 const mongoLib                      = require('./mongoLib');
 
 

@@ -1,9 +1,5 @@
 const { MongoClient, ServerApiVersion , ObjectId }  = require('mongodb');
 
-// const MongoClient                                 = require('mongodb').MongoClient;
-
-const dbProperties                                  = require('./dbProperties');
-
 exports.initialize                                = initialize;
 exports.insert                                    = insert;
 exports.getAll                                       = getAll;
@@ -12,7 +8,8 @@ exports.update                                    = update;
 exports.remove                                    = remove;
 
 // const conn = new MongoClient();
-const client = new MongoClient(dbProperties.mongo.connectionString, {
+
+const client = new MongoClient(config.get('databaseSettings.mongo_db_connection'), {
     serverApi: {
       version: ServerApiVersion.v1,
       strict: true,

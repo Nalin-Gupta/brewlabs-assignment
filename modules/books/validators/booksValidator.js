@@ -72,7 +72,7 @@ function updateBooks(req, res, next) {
 function deleteBooks(req, res, next) {
 
     const schema = Joi.object().keys({
-        id         : Joi.number().required()
+        id         : Joi.string().required()
     });
     let  validation = schema.validate(req.params);
     if (!validation.error) {

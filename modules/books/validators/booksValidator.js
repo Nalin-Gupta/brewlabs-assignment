@@ -49,7 +49,7 @@ function addBooks(req, res, next) {
 function updateBooks(req, res, next) {
 
     const paramsSchema = Joi.object().keys({
-        id         : Joi.number().required()
+        id         : Joi.string().required()
     });
     const bodySchema   = Joi.object().keys({
         title      : Joi.string().optional(),

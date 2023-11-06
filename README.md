@@ -26,6 +26,7 @@ List the key features of your project. For example:
 
 - Node.js (v21.1.0 Used)
 - MongoDB Connection String 
+- AWS Cloud Console Account
 
 ## Installation
 
@@ -41,35 +42,37 @@ npm run dev
 ```
 
 ## Deploymnet Details
+
+Current Example API Base URl : http://54.226.89.144:9000/
 Deployment Details :
 
-1> Launched An Ec2 Instance from AWS Console
-2> Created a Security Group for the instance to allow traffic from ALL IPs to port 9000 of the server 
-3> Installed GIT 
+- Launched An Ec2 Instance from AWS Console
+- Created a Security Group for the instance to allow traffic from ALL IPs to port 9000 of the server 
+- Installed GIT 
 ```bash
 sudo yum install git
 ```
-4> Installed Node
+- Installed Node
 ```bash
 sudo yum install -y nodejs
 ```
-5> Installed Pm2 
+- Installed Pm2 
 ```bash
 npm i pm2 -g
 ```
-6> Created a user brewlabs
+- Created a user brewlabs
 ```bash
 sudo adduser brewlabs
 ```
-7> Switched to user brewlabs
+- Switched to user brewlabs
 ```bash
 sudo su - brewlabs
 ```
-8> Cloned git repo
+- Cloned git repo
 ```bash
 git clone https://github.com/Nalin-Gupta/brewlabs-assignment.git
 ```
-9> Start Up a instance using pm2
+- Start Up a instance using pm2
 ```bash
 NODE_ENV=development pm2 start app.js --name "BookShelf"
 ```

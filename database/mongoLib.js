@@ -2,7 +2,7 @@ const { MongoClient, ServerApiVersion , ObjectId }  = require('mongodb');
 
 exports.initialize                                = initialize;
 exports.insert                                    = insert;
-exports.getAll                                       = getAll;
+exports.getAll                                    = getAll;
 exports.getById                                   = getById;
 exports.update                                    = update;
 exports.remove                                    = remove;

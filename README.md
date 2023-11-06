@@ -9,6 +9,7 @@ A Nodejs Application using MongoDB that exposes RESTful API for managing books
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Deployment Details](#deployment)
 - [API Endpoints](#api-endpoints)
 
 <!-- ## Introduction
@@ -38,6 +39,42 @@ npm install
 ```bash
 npm run dev
 ```
+
+## Deploymnet Details
+Deployment Details :
+
+1> Launched An Ec2 Instance from AWS Console
+2> Created a Security Group for the instance to allow traffic from ALL IPs to port 9000 of the server 
+3> Installed GIT 
+```bash
+sudo yum install git
+```
+4> Installed Node
+```bash
+sudo yum install -y nodejs
+```
+5> Installed Pm2 
+```bash
+npm i pm2 -g
+```
+6> Created a user brewlabs
+```bash
+sudo adduser brewlabs
+```
+7> Switched to user brewlabs
+```bash
+sudo su - brewlabs
+```
+8> Cloned git repo
+```bash
+git clone https://github.com/Nalin-Gupta/brewlabs-assignment.git
+```
+9> Start Up a instance using pm2
+```bash
+NODE_ENV=development pm2 start app.js --name "BookShelf"
+```
+
+
 
 ## API Endpoints
 

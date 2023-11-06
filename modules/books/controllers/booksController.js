@@ -116,7 +116,7 @@ async function addBooks(req , res) {
         let author      = req.body.author;
         let summary     = req.body.summary;
 
-        let data = mongo.insert(booksConstants.COLLECTIONS.BOOKS_COLLECTION , {
+        let data = await mongo.insert(booksConstants.COLLECTIONS.BOOKS_COLLECTION , {
             title,
             author,
             summary
